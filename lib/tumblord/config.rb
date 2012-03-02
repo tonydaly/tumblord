@@ -21,5 +21,12 @@ module Tumblord
       yield self
       self
     end
+
+    # Create a hash of options and their values
+    def options
+      options = {}
+      VALID_OPTIONS_KEYS.each{|k| options[k] = send(k)}
+      options
+    end
   end
 end
