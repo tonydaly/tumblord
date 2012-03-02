@@ -16,12 +16,14 @@ There are different levels of authentication for the API.
 * API Key (OAuth Consumer Key): `info` and `posts`
 * OAuth: everything else
 
+    ```ruby
     Tumblord.configure do |config|
       config.consumer_key = YOUR_CONSUMER_KEY
       config.consumer_secret = YOUR_CONSUMER_SECRET
       config.oauth_token = YOUR_OAUTH_TOKEN
       config.oauth_token_secret = YOUR_OAUTH_TOKEN_SECRET
     end
+    ```
 
 ## Getting started
 
