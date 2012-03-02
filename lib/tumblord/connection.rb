@@ -1,4 +1,5 @@
 require 'faraday'
+require 'tumblord/request/oauth'
 
 module Tumblord
   module Connection
