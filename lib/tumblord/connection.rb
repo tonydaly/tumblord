@@ -17,8 +17,7 @@ module Tumblord
         },
         :url => options.fetch(:endpoint, endpoint),
       }
-      p user_agent
-      p endpoint
+
       @connection ||= Faraday.new(default_options) do |builder|
         builder.use Faraday::Response::Logger
         builder.use Tumblord::Request::TumblrOAuth, credentials if credentials?
