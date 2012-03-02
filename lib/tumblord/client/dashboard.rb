@@ -8,7 +8,8 @@ module Tumblord
       # @return [Tumblord::Dashboard]
       # @raise [Tumblord::Error::Unauthorized] Error raised when supplied user credentials are not valid.
       def dashboard
-        'hey'
+        dashboard = get("/v2/user/dashboard")
+        # Tumblord::Dashboard(dashboard)
       end
     end
   end
