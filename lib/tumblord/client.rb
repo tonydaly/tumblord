@@ -1,6 +1,7 @@
 require 'tumblord/authenticatable'
 require 'tumblord/config'
 require "tumblord/connection"
+require "tumblord/post"
 require "tumblord/request"
 
 module Tumblord
