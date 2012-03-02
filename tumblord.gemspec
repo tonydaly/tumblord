@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Tony Daly"]
   s.email       = ["tony.daly@me.com"]
   s.homepage    = ""
-  s.summary     = %q{Ruby gem for Tumblr V2 API}
-  s.description = %q{Ruby gem for Tumblr V2 API}
+  s.summary     = %q{A Ruby wrapper for the Tumblr V2 API}
+  s.description = %q{A Ruby wrapper for the Tumblr V2 API}
 
   s.rubyforge_project = "tumblord"
 
