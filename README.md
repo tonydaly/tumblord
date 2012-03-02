@@ -31,6 +31,6 @@ Methods are either blog methods or user methods.
 
 ### Dashboard
 
-    /user/dashboard – Retrieve a User's Dashboard
+**/user/dashboard – Retrieve a User's Dashboard**
 
     Tumblord.dashboard => Tumblord::Dashboard
