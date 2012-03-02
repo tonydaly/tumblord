@@ -1,5 +1,13 @@
-require "tumblord/version"
+require 'tumblord/config'
 
 module Tumblord
-  # Your code goes here...
+  extend Config
+  class << self
+    # Alias for Twitter::Client.new
+    #
+    # @return [Twitter::Client]
+    def new(options={})
+      Tumblord::Client.new(options)
+    end
+  end
 end
