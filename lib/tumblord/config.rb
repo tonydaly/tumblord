@@ -4,7 +4,7 @@ module Tumblord
   module Config
 
     ENDPOINT = 'api.tumblr.com'
-    USER_AGENT = "Tumblord Ruby Gem #{Tumblord::VERSIONgi}"
+    USER_AGENT = "Tumblord Ruby Gem #{Tumblord::VERSION}"
 
     # An array of valid keys in the options hash when configuring a {Twitter::Client}
     VALID_OPTIONS_KEYS = [
