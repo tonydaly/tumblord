@@ -1,5 +1,6 @@
 require 'faraday'
 require 'tumblord/request/oauth'
+require 'tumblord/response/parse_json'
 
 module Tumblord
   module Connection
@@ -22,6 +23,7 @@ module Tumblord
       @connection ||= Faraday.new(default_options) do |builder|
         builder.use Faraday::Response::Logger
         builder.use Tumblord::Request::TumblrOAuth, credentials if credentials?
+        builder.use Tumblord::Response::ParseJson
         builder.adapter  :net_http
       end
     end
