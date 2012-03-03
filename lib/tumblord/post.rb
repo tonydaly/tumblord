@@ -13,7 +13,8 @@ module Tumblord
 
     lazy_attr_reader :blog_name, :id, :post_url, :type, :timestamp,
       :date, :format, :reblog_key, :tags, :bookmarklet, :mobile,
-      :source_url, :source_title, :total_posts
+      :source_url, :source_title, :total_posts,
+      :highlighted, :liked, :note_count
 
     # Initializes a new Base object
     #
