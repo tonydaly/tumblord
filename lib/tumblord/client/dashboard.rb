@@ -1,3 +1,5 @@
+require 'tumblord/dashboard'
+
 module Tumblord
   class Client
     module Dashboard
@@ -9,7 +11,7 @@ module Tumblord
       # @raise [Tumblord::Error::Unauthorized] Error raised when supplied user credentials are not valid.
       def dashboard
         dashboard = get("/v2/user/dashboard")
-        # Tumblord::Dashboard(dashboard)
+        Tumblord::Dashboard.new(dashboard)
       end
     end
   end

@@ -9,6 +9,10 @@ module Tumblord
     attr_reader :posts, :offset, :total_posts
 
     def initialize(dashboard={})
+      # The docs say this should be returned.
+      # Suprise! They're lying :(
+      @total_posts = dashboard["response"]["total_posts"]
+      
       @posts = dashboard["response"]["posts"].collect do |post|
         case post["type"]
         when 'text'
